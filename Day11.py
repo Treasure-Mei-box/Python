@@ -60,7 +60,39 @@ for i in range(len(myNested)): #outer loop , i=0 till i =3
     print()
     
 '''
+
+'''
 for i in myNested: #outer loop 
     for j in i: #inner loop 
         print((j), end=" * ")
     print()
+'''
+
+#Exercise 1
+'''
+for i in range(1,11):
+    for j in range(1,11):
+        print(f"{i*j : 5}" , end=" ")
+    print()
+'''
+
+#Exercise 2
+'''
+name_list = ["Peter", "Tommy", "George", "Sanchaz","Geo"]
+for name in name_list:
+    if name[1] == "e" and len(name) >= 4:
+        print(name)
+        
+'''
+
+#Exercise 3
+
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+if a > b:
+    a,b = b,a
+for num in range(a,b+1):
+    if str(num)[-1] in['3','7']: #replace with * if the num ending in 3 or 7
+        print("*" , end =" ")
+    else:
+        print(num, end=" ")
